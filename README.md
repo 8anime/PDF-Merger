@@ -1,6 +1,6 @@
 # Receipt PDF Merger
 
-This Python script allows you to merge multiple PDF files from a specified folder into a single PDF file. The merged content is saved in the output PDF file you specify.
+This Python project allows you to merge multiple PDF receipt files from a specified folder into a single PDF file which will contain all the merged receipts from individual PDF files. The merged receipts are saved in the output PDF file you specify.
 
 ## Table of Contents
 - [Usage](#usage)
@@ -11,7 +11,7 @@ This Python script allows you to merge multiple PDF files from a specified folde
 ## Usage
 
 ### Prerequisites
-Before using this script, make sure you have the following:
+Before using this project, make sure you have the following:
 
 - Python installed on your system.
 - The required Python libraries: `PyPDF2`. You can install it using `pip`:
@@ -26,7 +26,7 @@ Before using this script, make sure you have the following:
 
 2. Place the PDF files you want to merge in the data folder. The script will merge theses files in a single PDF file.
 
-3. Navigate to the main.py file in the root directory.
+3. Navigate to the main.py script in the root directory.
 
 4. Run the script using the following command:
 
@@ -35,9 +35,9 @@ Before using this script, make sure you have the following:
     ```
 
     - `pdf_folder`: The path to the folder containing the PDF files you want to merge.
-    - `output_pdf`: The name of the output PDF file where the merged content will be saved.
+    - `output_pdf`: The name of the output PDF file where the merged receipts will be saved.
 
-5. The script will merge the PDF files and save the resulting PDF as `combined_receipts.pdf` in the same directory.
+5. The script will merge the PDF receipt files and save the resulting PDF as `combined_receipts.pdf` in the same directory.
 
 ### Example
 
