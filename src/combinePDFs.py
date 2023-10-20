@@ -6,6 +6,7 @@ import logging
 # Configure the logging module
 logging.basicConfig(filename='pdf_merge.log', level=logging.INFO)
 
+
 def mergePdfDocuments(pdf_folder, ouput_pdf):
     """
     Merge multiple PDF files from a specified folder into a single PDF.
@@ -25,8 +26,8 @@ def mergePdfDocuments(pdf_folder, ouput_pdf):
     """
     try:
         pdfFiles = []                                # Store all PDF file paths in a list
-        for filename in os.listdir(pdf_folder):      # Search for PDF files in the 'data' directory
-            if filename.endswith('.pdf'):            # Search for files ending with '.pdf' extension
+        for filename in os.listdir(pdf_folder):      # Search for PDF files in the 'data folder' in the root directory
+            if filename.endswith('.pdf'):            # Search for files ending with '.pdf' extension located in the 'data folder'
                 pdfFiles.append(os.path.join(pdf_folder, filename))  # Add files with '.pdf' extension to the 'pdfFiles list'
     
         # Sort the filenames to lowercase and make them case-insensitive alphabetic order
@@ -52,5 +53,5 @@ def mergePdfDocuments(pdf_folder, ouput_pdf):
         logging.info('PDF merge was successful')
 
     except Exception as e:     # Handle any errors that might have occurred during processing of the file
-        print(e)
+        print(e)               # Print the error message
         logging.error(f'An error occurred: {str(e)}')
